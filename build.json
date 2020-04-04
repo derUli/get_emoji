@@ -1,0 +1,7 @@
+{
+   "id" : "get_emoji",
+   "version" : "1.0",
+   "description" : "✂️ Copy and 📋 Paste Emoji 👍",
+   "tags" : ["emoji", "emojis"],
+   "compatible_from" : "2019.1"
+}
