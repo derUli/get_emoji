@@ -21,7 +21,7 @@ class GetEmojiController extends MainClass {
 
         // detect old windows versions
         foreach ($oldWindowsVersions as $ntVersion) {
-            if (str_contains("NT $ntVersion", $useragent)) {
+            if (str_contains($useragent, "NT $ntVersion")) {
                 $isOldOs = true;
             }
         }
@@ -52,7 +52,7 @@ class GetEmojiController extends MainClass {
                     $matches
             );
 
-            return version_compare($matches[1], $version, '<');
+            return UliCMS\Utils\VersionComparison($matches[1], $version, '<');
         }
         return false;
     }
