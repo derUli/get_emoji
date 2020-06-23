@@ -52,7 +52,7 @@ class GetEmojiController extends MainClass {
                     $matches
             );
 
-            return UliCMS\Utils\VersionComparison($matches[1], $version, '<');
+            return UliCMS\Utils\VersionComparison\compare($matches[1], $version, '<');
         }
         return false;
     }
